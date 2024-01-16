@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' type='text/css' media='screen' href='css.css'>
+    <title>Exploring Data Representation</title>
+</head>
+<body>
+    <header>
+        <h1>Exploring Data Representation in Web Development</h1>
+        <p style="text-align: center;"><strong>Welcome to the interactive guide!</strong></p>
+    </header>
+    <div id="container">
+    <div id="container1">
+    <section id="layout" style="border-top: 0px;">
+        <article style="border-top: 0px;">
+            <h2 class="noSpace">Introduction</h2>
+            <p>This practical assignment introduces you to web development using HTML and JavaScript...</p>
+        </article>  
+        <section id="jsonXmlComparison">
+            <article style="border-top: 0px;">
+                <h2 class="noSpace">Introduction to XML</h2>
+                <p>The text-based format known as XML, or Extensible Markup Language, defines hierarchical elements in a document using tags. It makes data structure obvious because it is self-descriptive. Because of its versatility and independence from platforms,
+                     XML is frequently used for data interchange in applications such as web services and configuration files.</p>
+                
+            </article>
+
+            <article>
+                <h2 class="noSpace">HTML vs. XML</h2>
+                <ul><strong class="noSpace">HTML (Hypertext Markup Language):</strong>
+                    <li><strong>Purpose:</strong> Primarily for structuring and presenting web content.</li>
+                    <li><strong>Syntax:</strong> Strict, with predefined tags and forgiving error handling.</li>
+                    <li><strong>Tags:</strong> Predefined and semantic, conveying meaning about content.</li>
+                    <li><strong>Semantics:</strong> Emphasizes semantics for accessibility and SEO.</li>
+                </ul>
+                <ul><strong class="noSpace">XML (eXtensible Markup Language):</strong>
+                    <li><strong>Purpose:</strong> Generic markup language for creating custom markup languages.</li>
+                    <li><strong>Syntax:</strong> Flexible and extensible, allowing user-defined tags.</li>
+                    <li><strong>Tags:</strong> User-defined, representing structured data.</li>
+                    <li><strong>Semantics:</strong> Customizable through DTDs or XML Schemas for defining structure and content semantics.</li>
+                </ul>
+            </article>
+
+            <article>
+                <h2 class="noSpace">JSON (JavaScript Object Notation) vs. XML (eXtensible Markup Language):</h2>
+                <ul><strong class="noSpace">JSON:</strong>
+                    <li><strong>Purpose:</strong>Lightweight data interchange format primarily used for web applications.</li>
+                    <li><strong>Syntax:</strong>  Concise and readable, based on key-value pairs and arrays.</li>
+                    <li><strong>Tags:</strong> No tags; data is represented as key-value pairs and arrays.</li>
+                    <li><strong>Semantics:</strong>Simpler structure, often preferred for APIs and data storage.</li>
+                </ul>
+                <ul><strong class="noSpace">XML:</strong>
+                    <li><strong>Purpose:</strong>Generic markup language for data interchange and structured data representation.</li>
+                    <li><strong>Syntax:</strong>Extensible with user-defined tags, more verbose than JSON.</li>
+                    <li><strong>Tags:</strong> User-defined, representing structured data hierarchies.</li>
+                    <li><strong>Semantics:</strong> Customizable through DTDs or XML Schemas; versatile for diverse data structures.</li>
+                </ul>
+                <ul><strong class="noSpace">Comparison:</strong>
+                    <li><strong>Readability: </strong>JSON is more compact and often easier to read for complex data structures.</li>
+                    <li><strong>Flexibility:</strong>XML offers more flexibility due to user-defined tags and hierarchical structure.</li>
+                    <li><strong>Use Cases: </strong>JSON is common for web APIs and configurations, while XML is prevalent in diverse data interchange scenarios and document representation.</li>
+                </ul>
+            </article>
+        </section>
+</section>
+</div>
+<div id="a">
+<div id="container2">
+        <section id="xmlExampleSyntax" style="border-top: 0px;">
+            <article style="border-top: 0px;">
+                <h2 class="noSpace">XML Example</h2>
+                <p>So the image on the right shows us the XML file called data.xml which is rendered in the web page in the format as shown on the right.</p>
+                <div class="xmldiv"> 
+                    <div style="display:flex; flex-wrap: wrap;">
+                        <img src="XMLsyntax.png">
+                    </div>
+                        <products class="xmlExample noSpace">
+                            <product id="1">
+                                <name>Product A</name>
+                                <price>29.99</price>
+                            </product><br>
+                            <product id="2">
+                                <name>Product B</name>
+                                <price>19.99</price>
+                            </product>
+                        </products>
+                <div>
+                
+            </article>
+
+            <article>
+                <h2 class="noSpace">XML Syntax</h2>
+                <p>Extensible Markup Language, or XML, has tight grammar requirements. Data is encapsulated in tags, and every starting tag has a matching closing tag. For instance, the <products> element in the given XML data wraps a list of <product> elements, each having unique attributes like "id," and the data inside these elements, such as <name> and <price>, is contained within the tags that correspond to these components. A key component of XML syntax is the adherence to paired tags and a hierarchical structure, which guarantees well
+                    -formed and understandable data representation.</p>
+                <!-- <img src="XMLsyntax.png"> -->
+            </article>
+        </section>
+            <article>
+                <h2 class="noSpace">XML Validator Tool</h2>
+                <label for="xmlInput" class="noSpace"><strong style="font-size: large;">Paste your XML document here:</strong><br></label>
+                <textarea id="xmlInput" rows="15" cols="75"></textarea>
+                <button id="validateButton">Validate XML</button>
+                <p id="validationResult"></p>
+            </article>
+</div>
+</div>
+</div>
+        
+            <script src="script.js">
+            </script>
+        </section>
+    </section>
+</body>
+</html>

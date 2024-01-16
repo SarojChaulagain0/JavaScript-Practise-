@@ -1,0 +1,44 @@
+<!-- //source code from w3school -->
+<!-- https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_animate_3 -->
+<!-- learning animating technique -->
+
+<!DOCTYPE html>
+<html>
+
+<style>
+  /* CSS styling for the container */
+  #a{
+    display: flex;
+    justify-content: center;
+  }
+  #container {
+
+    width: 400px;
+    height: 400px;
+    position: relative;
+    background: yellow;
+  }
+
+  /* CSS styling for the animated element */
+  #animate {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    background-color: red;
+  }
+</style>
+
+<body>
+  <!-- Button to trigger the animation -->
+  <p><button onclick="myMove()">Click Me</button></p>
+    <div id="a">
+  <!-- Container div to hold the animated element -->
+  <div id="container">
+    <!-- Animated element -->
+    <div id="animate"></div>
+  </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

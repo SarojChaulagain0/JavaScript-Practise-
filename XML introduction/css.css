@@ -1,0 +1,62 @@
+body {
+	font: 'Raleway', sans-serif;
+    color: rgb(0, 0, 0);
+    letter-spacing: .5em;
+    top: 15%;
+	background: linear-gradient(to right, rgb(255, 255, 255) , rgb(167, 167, 151)); /* Standard syntax */
+    }
+    #container{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        border-top: 1px solid rgb(20, 20, 20);
+        
+    }
+    h1, h2{
+        text-align: center;
+        text-transform: uppercase;
+    }
+    .noSpace{
+        letter-spacing: 0px;
+    }
+    p, li{
+        font-size: medium;
+        letter-spacing: 0;
+        
+    }
+    #container1,#a{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 50%;
+
+    }
+    
+    #container2{
+        display: flex;
+        flex-wrap: wrap;
+        /* justify-content: space-around; */
+        width: 50%;
+        /* border-left: 0.5px solid black; */
+    }
+    section, article{
+        border-top: 0.5px solid black;
+    }
+    /* img{
+        display:block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        margin-bottom: 10px;
+    } */
+    .xmldiv{
+        display: flex;
+        
+    }
+    img{
+        display:block;
+        width:200px;
+        height:250px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
