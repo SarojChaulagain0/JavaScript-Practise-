@@ -1,0 +1,49 @@
+
+ body{
+    height: 100%;
+    width: 100%;
+    /* display: flex; */
+}
+ form {
+    border: 3px solid #f1f1f1;
+    border-radius: 10px;
+    margin: auto;
+    /* margin-left: 50%;
+    margin-top: 50%; */
+    width: 20%;
+  }
+  
+  
+  input[type=text], input[type=password] {
+    width: relative;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+  }
+  
+  #responseMessage{
+    width: relative;
+    color: red;
+  }
+  button {
+    background-color: #1a98be;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: relative;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  .container {
+    padding: 16px;
+  }
+ 
