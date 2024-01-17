@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<People>
+    <Person>
+        <id>1</id>
+        <Name>John Doe</Name>
+        <age>25</age>
+        <city>New York</city>
+    </Person>
+
+    <Person>
+        <id>2</id>
+        <Name>Jane Smith</Name>
+        <age>30</age>
+        <city>Los Angeles</city>
+    </Person>
+
+    <Person>
+        <id>3</id>
+        <Name>Bob Johnson</Name>
+        <age>28</age>
+        <city>Chicago</city>
+    </Person>
+
+    <Person>
+        <id>4</id>
+        <Name>Alice Brown</Name>
+        <age>24</age>
+        <city>San Francisco</city>
+    </Person>
+</People>

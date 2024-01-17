@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>jQuery xmlexercise</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <div>
+        <ul id="staffList">
+
+        </ul>
+    </div>
+</body>
+
+<script>
+    $(document).ready(function(){
+        $.ajax({
+            type: "GET",
+            url: "DATA.xml",
+            dataType: "xml",
+            success: function(xml){
+                $(xml).find('Person').each(function(){
+                    var id = $(this).find('id').text();
+                    var name = $(this).find('Name').text();
+                    var age = $(this).find('age').text();
+                    var city = $(this).find('city').text();
+                    $("#staffList").append(id + " " + name + " " + age + " " + city + "<br>");
+                });
+            },
+            error: function(xhr, status, error) {
+                console.error("Error loading XML file: " + error);
+            }
+        });
+    });
+</script>
+</html>
