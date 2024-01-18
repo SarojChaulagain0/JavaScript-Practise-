@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Button to fetch data</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    
+</head>
+<body>
+
+    <header>
+        <h1>Dynamic Website</h1>
+    </header>
+
+    <section id="main-content">
+        
+        <button id="interactive-btn">Click Me</button>
+    </section>
+
+    <section id="json-display">
+        <h2>JSON Data</h2>
+        <ul id="json-list"></ul>
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <footer>
+        <p>&copy; Saroj Chaulagain</p>
+    </footer>
+
+    <script> 
+        document.getElementById('interactive-btn').addEventListener('click', function () {
+    
+    fetch('data.json')
+        .then(response => response.json())
+        .then(data => {
+            
+            const jsonList = document.getElementById('json-list');
+            jsonList.innerHTML = ''; 
+
+            data.forEach(product => {
+                const listItem = document.createElement('li');
+                listItem.innerHTML = `
+                    <strong>${product.name}</strong> (${product.brand}): 
+                    ${product.features.join(', ')}. Price: $${product.price}
+                `;
+                jsonList.appendChild(listItem);
+            });
+        })
+        .catch(error => console.error('Error fetching JSON:', error));
+});
+    </script>
+</body>
+</html>
